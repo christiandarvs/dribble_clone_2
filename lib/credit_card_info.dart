@@ -8,7 +8,7 @@ class CreditCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 180,
+      height: 160,
       width: 200,
       child: Card(
         child: Padding(
