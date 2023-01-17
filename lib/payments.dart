@@ -174,99 +174,231 @@ class PaymentsPage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ListView(
                 children: [
-                  Card(
-                    child: ListTile(
-                      onTap: () {},
-                      title: Text(
-                        'Add to Apple Wallet',
-                        style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
-                      ),
-                      trailing: IconButton(
-                          onPressed: (() {}),
-                          icon: const Icon(Icons.arrow_forward_ios)),
-                      leading: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset('images/credit-card (1).png'),
-                      ),
-                    ),
-                  ),
-                  Card(
-                    child: ListTile(
-                      onTap: () {},
-                      title: Text(
-                        'Card arriving by Thursday, 29 September',
-                        style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
-                      ),
-                      trailing: IconButton(
-                          onPressed: (() {}),
-                          icon: const Icon(Icons.arrow_forward_ios)),
-                      leading: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset('images/credit-card (1).png'),
-                      ),
-                    ),
-                  ),
-                  Card(
-                    child: ListTile(
-                      onTap: () {},
-                      title: Text(
-                        'Payment is due on January 29',
-                        style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
-                      ),
-                      trailing: IconButton(
-                          onPressed: (() {}),
-                          icon: const Icon(Icons.arrow_forward_ios)),
-                      leading: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset('images/credit-card (1).png'),
+                  SizedBox(
+                    height: 80,
+                    child: Card(
+                      child: ListTile(
+                        onTap: () {},
+                        title: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Payen*Workaway',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            const Text(
+                              '48 USD',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 17),
+                            )
+                          ],
+                        ),
+                        subtitle: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const [
+                            Text(
+                              'Spent 23rd Fri',
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                          ],
+                        ),
+                        leading: ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Container(
+                            height: 90,
+                            width: 50,
+                            color: Colors.grey.shade200,
+                            child: const Icon(
+                              Icons.grid_view_outlined,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                   ),
-                  Card(
-                    child: ListTile(
-                      onTap: () {},
-                      title: Text(
-                        'Payment is due on January 29',
-                        style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
-                      ),
-                      trailing: IconButton(
-                          onPressed: (() {}),
-                          icon: const Icon(Icons.arrow_forward_ios)),
-                      leading: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset('images/credit-card (1).png'),
+                  SizedBox(
+                    height: 80,
+                    child: Card(
+                      child: ListTile(
+                        onTap: () {},
+                        title: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'To your USD account',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            const Text(
+                              '0.04 USD',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 16),
+                            )
+                          ],
+                        ),
+                        subtitle: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const [
+                            Text(
+                              'Moved 22nd Thu',
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                            Text(
+                              '954 VND',
+                              style: TextStyle(color: Colors.grey),
+                            )
+                          ],
+                        ),
+                        leading: ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Container(
+                            height: 90,
+                            width: 50,
+                            color: Colors.grey.shade200,
+                            child: const Icon(
+                              Icons.repeat,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                   ),
-                  Card(
-                    child: ListTile(
-                      onTap: () {},
-                      title: Text(
-                        'Payment is due on January 29',
-                        style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
-                      ),
-                      trailing: IconButton(
-                          onPressed: (() {}),
-                          icon: const Icon(Icons.arrow_forward_ios)),
-                      leading: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset('images/credit-card (1).png'),
+                  SizedBox(
+                    height: 80,
+                    child: Card(
+                      child: ListTile(
+                        onTap: () {},
+                        title: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'To your USD account',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            const Text(
+                              '104 USD',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 17),
+                            )
+                          ],
+                        ),
+                        subtitle: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const [
+                            Text(
+                              'Moved 22nd Thu',
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                            Text(
+                              '1954 VND',
+                              style: TextStyle(color: Colors.grey),
+                            )
+                          ],
+                        ),
+                        leading: ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Container(
+                            height: 90,
+                            width: 50,
+                            color: Colors.grey.shade200,
+                            child: const Icon(
+                              Icons.repeat,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                   ),
-                  Card(
-                    child: ListTile(
-                      onTap: () {},
-                      title: Text(
-                        'Payment is due on January 29',
-                        style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+                  SizedBox(
+                    height: 80,
+                    child: Card(
+                      child: ListTile(
+                        onTap: () {},
+                        title: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Payen*Workaway',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            const Text(
+                              '48 USD',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 17),
+                            )
+                          ],
+                        ),
+                        subtitle: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const [
+                            Text(
+                              'Spent 23rd Fri',
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                          ],
+                        ),
+                        leading: ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Container(
+                            height: 90,
+                            width: 50,
+                            color: Colors.grey.shade200,
+                            child: const Icon(
+                              Icons.grid_view_outlined,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
                       ),
-                      trailing: IconButton(
-                          onPressed: (() {}),
-                          icon: const Icon(Icons.arrow_forward_ios)),
-                      leading: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset('images/credit-card (1).png'),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 80,
+                    child: Card(
+                      child: ListTile(
+                        onTap: () {},
+                        title: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Payen*Workaway',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            const Text(
+                              '48 USD',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 17),
+                            )
+                          ],
+                        ),
+                        subtitle: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const [
+                            Text(
+                              'Spent 23rd Fri',
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                          ],
+                        ),
+                        leading: ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Container(
+                            height: 90,
+                            width: 50,
+                            color: Colors.grey.shade200,
+                            child: const Icon(
+                              Icons.grid_view_outlined,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                   ),
