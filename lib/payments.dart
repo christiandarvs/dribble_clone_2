@@ -31,31 +31,103 @@ class PaymentsPage extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.fromLTRB(15.0, 0, 15.0, 0),
               child: Row(
-                children: const [
-                  SizedBox(
-                      height: 140,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: Container(
                       width: 120,
-                      child: Card(
-                        child: Text('data'),
-                      )),
-                  SizedBox(
-                      height: 140,
+                      height: 160,
+                      padding: const EdgeInsets.all(10),
+                      color: const Color(0xff03a6f1),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Stack(children: [
+                            CircleAvatar(
+                                backgroundColor: Colors.white,
+                                child: Image.asset('images/atm-card.png'))
+                          ]),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Text('2,539.00',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.bold, fontSize: 17)),
+                          Text(
+                            'British Pound',
+                            style: GoogleFonts.poppins(),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 15,
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: Container(
                       width: 120,
-                      child: Card(
-                        child: Text('data'),
-                      )),
-                  SizedBox(
-                      height: 140,
+                      height: 160,
+                      padding: const EdgeInsets.all(10),
+                      color: const Color(0xffffcd33),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Stack(children: [
+                            CircleAvatar(
+                                backgroundColor: Colors.white,
+                                child: Image.asset('images/atm-card.png'))
+                          ]),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Text('40.00',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.bold, fontSize: 17)),
+                          Text(
+                            'US Dollar',
+                            style: GoogleFonts.poppins(),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 15,
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: Container(
                       width: 120,
-                      child: Card(
-                        child: Text('data'),
-                      )),
-                  SizedBox(
-                      height: 140,
-                      width: 120,
-                      child: Card(
-                        child: Text('data'),
-                      )),
+                      height: 160,
+                      padding: const EdgeInsets.all(10),
+                      color: const Color(0xffff826f),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Stack(children: [
+                            CircleAvatar(
+                                backgroundColor: Colors.white,
+                                child: Image.asset('images/atm-card.png'))
+                          ]),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Text('230.00',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.bold, fontSize: 17)),
+                          Text(
+                            'Dollar Rate',
+                            style: GoogleFonts.poppins(),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
@@ -71,7 +143,9 @@ class PaymentsPage extends StatelessWidget {
                     Text(
                       'All activity',
                       style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.bold, fontSize: 22),
+                          fontWeight: FontWeight.bold,
+                          fontSize: 22,
+                          color: const Color(0xff35a6d8)),
                     ),
                     const Text('January')
                   ],
@@ -80,9 +154,16 @@ class PaymentsPage extends StatelessWidget {
                   children: [
                     IconButton(
                         onPressed: (() {}),
-                        icon: const Icon(Icons.ssid_chart_rounded)),
+                        icon: const Icon(
+                          Icons.ssid_chart_rounded,
+                          color: Color(0xff35a6d8),
+                        )),
                     IconButton(
-                        onPressed: (() {}), icon: const Icon(Icons.search))
+                        onPressed: (() {}),
+                        icon: const Icon(
+                          Icons.search,
+                          color: Color(0xff35a6d8),
+                        ))
                   ],
                 )
               ],
@@ -114,6 +195,22 @@ class PaymentsPage extends StatelessWidget {
                       onTap: () {},
                       title: Text(
                         'Card arriving by Thursday, 29 September',
+                        style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
+                      ),
+                      trailing: IconButton(
+                          onPressed: (() {}),
+                          icon: const Icon(Icons.arrow_forward_ios)),
+                      leading: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Image.asset('images/credit-card (1).png'),
+                      ),
+                    ),
+                  ),
+                  Card(
+                    child: ListTile(
+                      onTap: () {},
+                      title: Text(
+                        'Payment is due on January 29',
                         style: GoogleFonts.poppins(fontWeight: FontWeight.bold),
                       ),
                       trailing: IconButton(
